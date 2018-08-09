@@ -11,7 +11,7 @@
 
     <title>
         
-        MoDi的博客 | MoDi&#39;s Blog
+        构建系列-What - MoDi的博客 | MoDi&#39;s Blog
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    
+</div>
+    
 </div>
 
 
@@ -111,134 +115,44 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 720px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Career-Learning/">
-                <h3>
-                    Career-Learning
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Career" title="Career">Career</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-FIS-3/">
-                <h3>
-                    构建系列-FIS 3
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-Webpack/">
-                <h3>
-                    构建系列-Webpack
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-Gulp/">
-                <h3>
-                    构建系列-Gulp
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-What-to-do/">
-                <h3>
-                    构建系列-What
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Css-7-1-pattern/">
-                <h3>
-                    CSS 7-1 Pattern
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#CSS" title="CSS">CSS</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    
-</ul>
 
+
+<div class="post-container">
+    <div class="post-title">
+        构建系列-What
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-08-09 14:44:07</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Build" title="Build">Build</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>前端工程化思想的技术落地，将源代码转换成可以执行的JavaScript、CSS、HTML 代码，具体包括：</p>
+<ol>
+<li>代码转换：将 TypeScript 编译成JavaScript、将 SCSS 编译成 CSS等。</li>
+<li>文件优化：压缩JavaScript、CSS、HTML 代码，压缩合并图片等。</li>
+<li>代码分割：提取多个页面的公共代码，提取首屏不需要执行部分代码让其异步记在。</li>
+<li>模块合并：在采用模块化的项目里会有很多个模块和文件，需要通过构建功能将模块分类合并成一个文件。</li>
+<li>自动刷新：监听本地源代码变化，自动重新构建、刷新浏览器。</li>
+<li>代码校验：在代码被提交到仓库前需要校验代码是否符合规范，以及单元测试是否通过。</li>
+<li>自动发布：更新代码后，自动构建出线上发布代码并传输给发布系统。</li>
+</ol>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -285,7 +199,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>

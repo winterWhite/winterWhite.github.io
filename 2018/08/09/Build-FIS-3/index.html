@@ -11,7 +11,7 @@
 
     <title>
         
-        MoDi的博客 | MoDi&#39;s Blog
+        构建系列-FIS 3 - MoDi的博客 | MoDi&#39;s Blog
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li  class=active >
+            <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    
+</div>
+    
 </div>
 
 
@@ -111,134 +115,43 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 720px">
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Career-Learning/">
-                <h3>
-                    Career-Learning
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Career" title="Career">Career</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+
+<div class="post-container">
+    <div class="post-title">
+        构建系列-FIS 3
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-FIS-3/">
-                <h3>
-                    构建系列-FIS 3
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-08-09 15:59:26</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Build" title="Build">Build</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-Webpack/">
-                <h3>
-                    构建系列-Webpack
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-Gulp/">
-                <h3>
-                    构建系列-Gulp
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Build-What-to-do/">
-                <h3>
-                    构建系列-What
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Build" title="Build">Build</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2018-08-09</div>
-        <div class="post-info">
-            <a href="/2018/08/09/Css-7-1-pattern/">
-                <h3>
-                    CSS 7-1 Pattern
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#CSS" title="CSS">CSS</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
-    </div>
-    
-</div>
-<ul class="pager">
-    
-    
+    <div class="post-content ">
+        <p>FIS 3是一个来自百度的优秀国产构建工具。<br>相比Grant、Gulp只提供了基本的功能的工具，FIS 3提供了一些常见的前端构建功能：</p>
+<ul>
+<li>读写文件：通过 fis.match 读文件，release 配置文件输出路径。</li>
+<li>资源定位：解析文件之间的依赖关系和文件位置。</li>
+<li>文件指纹：在通过 useHash 配置输出文件时为文件 URL加上 md5 戳，来优化浏览器的缓存。</li>
+<li>文件编译：通过 parser 配置文件解析器做文件转换，例如将 ES6 编译成 ES5。</li>
+<li>压缩资源：通过 optimizer 配置代码压缩方法。</li>
+<li>图片合并：通过 spriter 配置合并 CSS 里导入的图片到一个文件中，来减少 HTTP 请求数。</li>
 </ul>
 
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
     </div>
 </div>
 
@@ -285,7 +198,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
