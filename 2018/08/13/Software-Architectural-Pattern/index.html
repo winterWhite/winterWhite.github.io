@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="墨笛的博客">
+    <meta name="keyword"  content="前端">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Software Architectural Pattern - MoDi的博客 | MoDi&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Some technology fragments gathering </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/imgs/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>MoDi Z</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Layered-pattern-分层模式"><span class="toc-text">Layered pattern 分层模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Client-server-pattern-客户端／服务器模式"><span class="toc-text">Client-server pattern 客户端／服务器模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Master-slave-pattern-主从模式"><span class="toc-text">Master-slave pattern 主从模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pipe-filter-pattern-管道过滤器模式"><span class="toc-text">Pipe-filter pattern 管道过滤器模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Broker-pattern-经纪人模式"><span class="toc-text">Broker pattern 经纪人模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Peer-to-peer-pattern-点对点模式"><span class="toc-text">Peer-to-peer pattern 点对点模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Event-bus-pattern-事件总线模式"><span class="toc-text">Event-bus pattern 事件总线模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Model-view-controller-pattern-模型-视图-控制器模式-MVC"><span class="toc-text">Model-view-controller pattern 模型-视图-控制器模式 (MVC)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Blackboard-pattern-黑板模式"><span class="toc-text">Blackboard pattern 黑板模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Interpreter-pattern-口译员模式"><span class="toc-text">Interpreter pattern 口译员模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Compare-对比"><span class="toc-text">Compare 对比</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Some technology fragments gathering </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Software Architectural Pattern
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-08-13 11:03:52</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#BackEnd" title="BackEnd">BackEnd</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="Layered-pattern-分层模式"><a href="#Layered-pattern-分层模式" class="headerlink" title="Layered pattern 分层模式"></a>Layered pattern 分层模式</h2><p>基础分层：</p>
+<ol>
+<li>Presentation layer (UI layer) 表现层</li>
+<li>Application layer (Service layer) 应用层</li>
+<li>Business logic layer (Domain layer) 业务层</li>
+<li>Data access layer (Persistence layer) 数据层</li>
+</ol>
+<p>应用场景：</p>
+<ol>
+<li>General desktop applications 桌面应用程序</li>
+<li>E commerce web applications 电子商务 Web 应用</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-layered.png" alt="Layered pattern"></p>
+<h2 id="Client-server-pattern-客户端／服务器模式"><a href="#Client-server-pattern-客户端／服务器模式" class="headerlink" title="Client-server pattern 客户端／服务器模式"></a>Client-server pattern 客户端／服务器模式</h2><p>服务器监听客户端的所有请求，并进行响应</p>
+<p>应用场景：</p>
+<ol>
+<li>Online applications 线上应用，如 email、banking</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-c-s.png" alt="Client-server pattern"></p>
+<h2 id="Master-slave-pattern-主从模式"><a href="#Master-slave-pattern-主从模式" class="headerlink" title="Master-slave pattern 主从模式"></a>Master-slave pattern 主从模式</h2><p>Master 分发工作到 Slaves 的工作模式</p>
+<p>应用场景：</p>
+<ol>
+<li>Database replication 数据库复制中的主数据库和从属数据库</li>
+<li>Master and Slave drives 主／从驱动器</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-m-s.png" alt="Master-slave pattern"></p>
+<h2 id="Pipe-filter-pattern-管道过滤器模式"><a href="#Pipe-filter-pattern-管道过滤器模式" class="headerlink" title="Pipe-filter pattern 管道过滤器模式"></a>Pipe-filter pattern 管道过滤器模式</h2><p>数据 filtering 模式</p>
+<p>应用场景：</p>
+<ol>
+<li>Compilers 编译器</li>
+<li>Workflows in bioinformatics 生物信息学工作流程</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-p-f.png" alt="Pipe-filter pattern"></p>
+<h2 id="Broker-pattern-经纪人模式"><a href="#Broker-pattern-经纪人模式" class="headerlink" title="Broker pattern 经纪人模式"></a>Broker pattern 经纪人模式</h2><p>分布式系统，服务端-代理-客户端模式</p>
+<p>应用场景：</p>
+<ol>
+<li>Message broker software 消息代理软件，如 Apache Kafka</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-broker.png" alt="Broker pattern"></p>
+<h2 id="Peer-to-peer-pattern-点对点模式"><a href="#Peer-to-peer-pattern-点对点模式" class="headerlink" title="Peer-to-peer pattern 点对点模式"></a>Peer-to-peer pattern 点对点模式</h2><p>对等体，同时具有服务端／客户端的角色功能，可动态切换</p>
+<p>应用场景：</p>
+<ol>
+<li>File-sharing networks 文件共享网络，如 G2</li>
+<li>Multimedia protocols 多媒体协议，如 P2PTV</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-p2p.png" alt="Peer-to-peer pattern"></p>
+<h2 id="Event-bus-pattern-事件总线模式"><a href="#Event-bus-pattern-事件总线模式" class="headerlink" title="Event-bus pattern 事件总线模式"></a>Event-bus pattern 事件总线模式</h2><p>事件的4个组成部分：Event Source 事件源、Event Listener 事件监听器、Channel 通道、Event Bus 事件总线</p>
+<p>应用场景：</p>
+<ol>
+<li>Android development 安卓开发</li>
+<li>Notification services 通知服务</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-e-b.png" alt="Event-bus pattern"></p>
+<h2 id="Model-view-controller-pattern-模型-视图-控制器模式-MVC"><a href="#Model-view-controller-pattern-模型-视图-控制器模式-MVC" class="headerlink" title="Model-view-controller pattern 模型-视图-控制器模式 (MVC)"></a>Model-view-controller pattern 模型-视图-控制器模式 (MVC)</h2><p>3个组成部分：</p>
+<ol>
+<li>Model: Core functionality and data</li>
+<li>View: Displays the information to the user</li>
+<li>Controller: Handles the input from the user</li>
+</ol>
+<p>解耦数据与用户展示</p>
+<p>应用场景：</p>
+<ol>
+<li>World Wide Web applications 万维网应用架构</li>
+<li>Web frameworks Web 框架，如 Rails</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-mvc.png" alt="Model-view-controller pattern"></p>
+<h2 id="Blackboard-pattern-黑板模式"><a href="#Blackboard-pattern-黑板模式" class="headerlink" title="Blackboard pattern 黑板模式"></a>Blackboard pattern 黑板模式</h2><p>3个组成部分：</p>
+<ol>
+<li>blackboard </li>
+<li>knowledge source</li>
+<li>control component</li>
+</ol>
+<p>应用场景：</p>
+<ol>
+<li>Speech recognition 语音识别</li>
+<li>Vehicle identification and tracking 车辆识别与跟踪</li>
+<li>Protein structure identification 蛋白质结构鉴定</li>
+<li>Sonar signals interpretation 声纳信号解释</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-blackboard.png" alt="Blackboard pattern"></p>
+<h2 id="Interpreter-pattern-口译员模式"><a href="#Interpreter-pattern-口译员模式" class="headerlink" title="Interpreter pattern 口译员模式"></a>Interpreter pattern 口译员模式</h2><p>为语言的每个符号设定一个类，解释专用语言编写的程序组件</p>
+<p>应用场景：</p>
+<ol>
+<li>Database query languages 数据库语言，如 SQL</li>
+<li>Languages used to describe communication protocols 描述通信协议的语言</li>
+</ol>
+<p>示意图：</p>
+<p><img src="/imgs/architectural-pattern-Interpreter.png" alt="Interpreter pattern"></p>
+<h2 id="Compare-对比"><a href="#Compare-对比" class="headerlink" title="Compare 对比"></a>Compare 对比</h2><p><img src="/imgs/architectural-pattern-compare.png" alt="Compare architectural pattern"></p>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/winterWhite">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>

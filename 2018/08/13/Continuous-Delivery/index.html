@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="墨笛的博客">
+    <meta name="keyword"  content="前端">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Continuous Delivery - MoDi的博客 | MoDi&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Some technology fragments gathering </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/imgs/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>MoDi Z</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#《持续交付-发布可靠软件的系统方法》"><span class="toc-text">《持续交付-发布可靠软件的系统方法》</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-1-基础篇"><span class="toc-text">Part 1 基础篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#软件交付的问题"><span class="toc-text">软件交付的问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-2-配置管理"><span class="toc-text">Part 2 配置管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#定义"><span class="toc-text">定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#版本控制"><span class="toc-text">版本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#与项目相关的所有东西都纳入版本控制"><span class="toc-text">与项目相关的所有东西都纳入版本控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#频繁提交"><span class="toc-text">频繁提交</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#提交注释"><span class="toc-text">提交注释</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#依赖管理"><span class="toc-text">依赖管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#软件配置管理"><span class="toc-text">软件配置管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#配置分类"><span class="toc-text">配置分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#应用程序配置管理"><span class="toc-text">应用程序配置管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#管理配置信息的原则"><span class="toc-text">管理配置信息的原则</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#环境管理"><span class="toc-text">环境管理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-3-持续集成"><span class="toc-text">Part 3 持续集成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#实现持续集成"><span class="toc-text">实现持续集成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#持续集成的前提条件"><span class="toc-text">持续集成的前提条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#持续集成软件"><span class="toc-text">持续集成软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#必须的实践"><span class="toc-text">必须的实践</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#推荐的实践"><span class="toc-text">推荐的实践</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分布式团队-61-66"><span class="toc-text">分布式团队 61~66</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part-4-测试策略"><span class="toc-text">Part 4 测试策略</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#测试分类"><span class="toc-text">测试分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#业务导向-and-支持开发过程"><span class="toc-text">业务导向 and 支持开发过程</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Some technology fragments gathering </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Continuous Delivery
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-08-13 09:58:27</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Project Management" title="Project Management">Project Management</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="《持续交付-发布可靠软件的系统方法》"><a href="#《持续交付-发布可靠软件的系统方法》" class="headerlink" title="《持续交付-发布可靠软件的系统方法》"></a>《持续交付-发布可靠软件的系统方法》</h1><h2 id="Part-1-基础篇"><a href="#Part-1-基础篇" class="headerlink" title="Part 1 基础篇"></a>Part 1 基础篇</h2><h3 id="软件交付的问题"><a href="#软件交付的问题" class="headerlink" title="软件交付的问题"></a>软件交付的问题</h3><p><strong>关键词</strong>：<br>部署流水线：构建 =&gt; 部署 =&gt; 测试 =&gt; 发布<br>自动化、持续集成</p>
+<p><strong>发布反模式</strong></p>
+<ol>
+<li>手工部署</li>
+<li>开发完成之后才向类生产环境部署</li>
+<li>生产环境的手工配置管理</li>
+</ol>
+<p><strong>关键词</strong>：短周期【决定变更～用户可用】、高质量【质量不等于完美】<br>反馈：</p>
+<ol>
+<li>无论什么样的修改都应该触发反馈流程</li>
+<li>反馈应该尽快发出</li>
+<li>交付团队必须接受反馈，并依据它做出相应的行动</li>
+</ol>
+<p>可工作的软件组成：可执行的代码、配置信息、运行环境、数据</p>
+<p><strong>软件交付原则</strong></p>
+<ol>
+<li>为软件发布创建一个<strong>可重复</strong>且<strong>可靠</strong>的过程<ol>
+<li>尽可能地自动化</li>
+<li>尽可能将所有东西纳入版本控制</li>
+</ol>
+</li>
+<li>内建质量：尽早发现问题，解决问题，提前并频繁地做让你感到痛苦的事</li>
+<li>DONE意味着“已发布”</li>
+<li>交付过程事每个成员的责任</li>
+<li>持续改进: 计划plan =&gt; 做do =&gt; 研究stydy =&gt; 行动act</li>
+</ol>
+<h2 id="Part-2-配置管理"><a href="#Part-2-配置管理" class="headerlink" title="Part 2 配置管理"></a>Part 2 配置管理</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p><strong>配置管理</strong>：配置管理是指一个过程，通过该过程，所有与项目相关的产物，以及它们之间的关系都被<strong>唯一</strong>定义、修改、存储和检索</p>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><p><strong>版本控制系统</strong>：也称源代码控制管理系统或修订控制系统，是保存文件多个版本的一种机制。example：SCCS、RCS、CVS、Subversion、Mercurial、Git…</p>
+<p><strong>版本控制的目的</strong></p>
+<ol>
+<li>保留每个文件的所有版本的历史信息，并使之易于查找</li>
+<li>让分布式团队可以愉快地协作</li>
+</ol>
+<h4 id="与项目相关的所有东西都纳入版本控制"><a href="#与项目相关的所有东西都纳入版本控制" class="headerlink" title="与项目相关的所有东西都纳入版本控制"></a>与项目相关的所有东西都纳入版本控制</h4><p><strong>目标</strong>：能够随时获取软件在整个生命周期中任意时间点的文件状态【编译后的二进制代码不需要】</p>
+<h4 id="频繁提交"><a href="#频繁提交" class="headerlink" title="频繁提交"></a>频繁提交</h4><ol>
+<li>只有频繁提交代码，才能享受版本控制带来的好处</li>
+<li>一旦将代码提交，团队的所有人都能看到这些变更</li>
+<li>一次提交出发一次构建集成</li>
+</ol>
+<p>提交需要确保不破坏原有系统：</p>
+<ol>
+<li>提交代码前运行测试套件</li>
+<li>增量式引入变化</li>
+</ol>
+<p>当进行某项复杂的工作时，如何保证频繁提交的同时又不破坏原有系统？</p>
+<p><strong>不推荐开分支的原因</strong></p>
+<ol>
+<li>违背了持续集成的宗旨，新分支推迟了新功能的整合，只有到分支被合并时才能发现集成问题</li>
+<li>多个开发者分别创建分支，问题会程指数增加，合并过程也会极其复杂</li>
+<li>尽管又好用的自动合并功能，但它无法解决语义冲突</li>
+<li>合并困难导致重构代码库变得困难</li>
+</ol>
+<p>我们推荐使用<strong>增量方式</strong>开发新功能，并频繁且有规律地向版本控制系统提交代码。</p>
+<h4 id="提交注释"><a href="#提交注释" class="headerlink" title="提交注释"></a>提交注释</h4><p>推荐的提交注释：第一段简短地总结性描述；接下来描述更多细节；包含一个可以链接到项目管理工具中的一个功能或缺陷的链接</p>
+<h3 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h3><ol>
+<li>外部库文件</li>
+<li>组件管理</li>
+</ol>
+<h3 id="软件配置管理"><a href="#软件配置管理" class="headerlink" title="软件配置管理"></a>软件配置管理</h3><p>配置反模式：终级配置，系统配置工作变得非常复杂以至于抵消了其在灵活性上带来的好处<br><strong>更好的方式</strong>：先专注于提供具有高价值且可配置程度较低的功能，然后在真正需要时再添加可配置选项</p>
+<h4 id="配置分类"><a href="#配置分类" class="headerlink" title="配置分类"></a>配置分类</h4><ol>
+<li>构建时</li>
+<li>打包时</li>
+<li>部署软件程序时</li>
+<li>启动／运行时<br>建议：在相邻的两次部署之间，任何变更都应该作为配置项被捕获和记录，而不应该在编译或打包时植入</li>
+</ol>
+<h4 id="应用程序配置管理"><a href="#应用程序配置管理" class="headerlink" title="应用程序配置管理"></a>应用程序配置管理</h4><p>特定于测试环境或生产环境的实际配置信息应该与源代码分离在单独的代码库中。需要保证配置信息的版本与相应的应用软件的版本相匹配。</p>
+<ol>
+<li>获取配置信息<ol>
+<li>中央服务系统提供配置信息</li>
+<li>中心仓库获取配置信息</li>
+</ol>
+</li>
+<li>配置项建模</li>
+<li>系统配置测试<ol>
+<li>保证配置设置中对外部服务的饮用是良好的</li>
+<li>冒烟测试</li>
+</ol>
+</li>
+</ol>
+<p><strong>跨应用配置管理</strong>：配置选项索引表、实时存取配置信息</p>
+<h4 id="管理配置信息的原则"><a href="#管理配置信息的原则" class="headerlink" title="管理配置信息的原则"></a>管理配置信息的原则</h4><p>将应用程序的配置信息当作代码一样来看待 </p>
+<ol>
+<li>明确配置注入时机</li>
+<li>配置项与代码同一个仓库保存，但配置值单独保存</li>
+<li>自动化</li>
+<li>容易查看</li>
+<li>明确命名</li>
+<li>模块化 and 封闭</li>
+<li>DRY 原则</li>
+<li>最少化</li>
+<li>避免过度设计，应尽可能简单</li>
+<li>测试</li>
+</ol>
+<h3 id="环境管理"><a href="#环境管理" class="headerlink" title="环境管理"></a>环境管理</h3><p><strong>环境</strong>：应用程序所以来的硬件、软件、基础设施和外部系统<br><strong>原则</strong>：环境的配置和应用程序的配置同样重要<br><strong>内容</strong></p>
+<ol>
+<li>操作系统，包括其版本、补丁级别以及配置设置</li>
+<li>软件包，及软件包的具体版本和配置</li>
+<li>网络拓扑结构</li>
+<li>外部服务，及其版本和配置信息</li>
+<li>现有的数据及其他信息<br><strong>高效管理环境策略原则</strong></li>
+<li>二进制文件与配置信息分离</li>
+<li>配置信息保存在一处</li>
+</ol>
+<h2 id="Part-3-持续集成"><a href="#Part-3-持续集成" class="headerlink" title="Part 3 持续集成"></a>Part 3 持续集成</h2><p><strong>要求</strong>：每当有人提交代码时，就对整个应用进行构建，并对其执行全面的自动化测试集合<br><strong>目标</strong>：让正在开发的软件一直处于可工作状态</p>
+<h3 id="实现持续集成"><a href="#实现持续集成" class="headerlink" title="实现持续集成"></a>实现持续集成</h3><ol>
+<li>准备工作<ol>
+<li>版本控制</li>
+<li>自动化构建【命令行构建的重要性】</li>
+<li>团队共识</li>
+</ol>
+</li>
+<li>持续集成工具<ol>
+<li>知道那里寻找代码控制库</li>
+<li>运行什么脚本进行编译&amp;自动化测试</li>
+<li>如果提交破坏了程序，应该如何提醒 </li>
+</ol>
+</li>
+<li>基本的持续集成过程<ol>
+<li>确认上一次提交构建已成功</li>
+<li>更新代码到本地</li>
+<li>本地运行构建&amp;测试，并确认能成功</li>
+<li>提交代码到版本库</li>
+<li>确认本次提交构建成功</li>
+</ol>
+</li>
+</ol>
+<h3 id="持续集成的前提条件"><a href="#持续集成的前提条件" class="headerlink" title="持续集成的前提条件"></a>持续集成的前提条件</h3><ol>
+<li>频繁提交【小步修改】</li>
+<li>全面的自动化测试套件：单元测试、组件测试、验收测试</li>
+<li>较短的构建和测试过程</li>
+<li>开发环境管理</li>
+</ol>
+<h3 id="持续集成软件"><a href="#持续集成软件" class="headerlink" title="持续集成软件"></a>持续集成软件</h3><p><strong>基本功能</strong>：轮询版本控制系统、可视化</p>
+<h3 id="必须的实践"><a href="#必须的实践" class="headerlink" title="必须的实践"></a>必须的实践</h3><ol>
+<li>构建失败之后不要提交新代码</li>
+<li>提交前在本地运行所有的提交测试，或者让持续集成服务器完成此事</li>
+<li>等提交测试通过后再继续工作</li>
+<li>回家之前，构建必须处于成功状态</li>
+<li>时刻准备着回滚到前一个版本</li>
+<li>回滚之前要规定一个修复时间</li>
+<li>不要将失败的测试注释掉</li>
+<li>为自己导致的问题负责</li>
+<li>测试驱动开发 TDD</li>
+</ol>
+<h3 id="推荐的实践"><a href="#推荐的实践" class="headerlink" title="推荐的实践"></a>推荐的实践</h3><ol>
+<li>极限编程【持续集成是极限编程的十二个核心实践之一】：TTD、代码集体所有权、重构…</li>
+<li>若违背架构原则，就让构建失败</li>
+<li>若测试运行变慢，就让构建失败</li>
+<li>若有编译警告或代码风格问题，就让测试失败</li>
+</ol>
+<h3 id="分布式团队-61-66"><a href="#分布式团队-61-66" class="headerlink" title="分布式团队 61~66"></a>分布式团队 61~66</h3><h2 id="Part-4-测试策略"><a href="#Part-4-测试策略" class="headerlink" title="Part 4 测试策略"></a>Part 4 测试策略</h2><p>推荐阅读：《Agile Testing》</p>
+<p>测试策略的设计主要是<strong>识别</strong>和<strong>评估</strong>项目风险的优先级，以及决定采用哪些行动来缓解风险的一个过程。</p>
+<h3 id="测试分类"><a href="#测试分类" class="headerlink" title="测试分类"></a>测试分类</h3><p>测试象限 P68 图4-1</p>
+<p>两个维度：</p>
+<ol>
+<li>业务导向 or 技术导向</li>
+<li>支持开发过程 or 评判项目</li>
+</ol>
+<h4 id="业务导向-and-支持开发过程"><a href="#业务导向-and-支持开发过程" class="headerlink" title="业务导向 and 支持开发过程"></a>业务导向 and 支持开发过程</h4><ol>
+<li>功能测试／验收测试<br><strong>目的</strong>：确保用户故事的验收条件得到满足<br><strong>范围</strong>：功能、容量、易用性、安全性、可变性、可用性<br><strong>分析</strong>：Happy Path &amp; Alternate Path &amp; Sad Path、等价划分分析 &amp; 边界值分析<br><strong>环境</strong>：类生产环境【尽可能保证和生产环境相似】<br><strong>外部服务</strong>：模拟[mock]技术<br><strong>自动化验收测试</strong></li>
+</ol>
+<ul>
+<li>加快反馈速度</li>
+<li>减少测试人员负担</li>
+<li>回归测试 </li>
+<li>需求文档</li>
+</ul>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/winterWhite">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
