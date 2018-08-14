@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Webpack-的工作"><span class="toc-text">Webpack 的工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS-的转换处理"><span class="toc-text">JS 的转换处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-的转换处理"><span class="toc-text">CSS 的转换处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其它文件，如-png、jpg、svg、ttf"><span class="toc-text">其它文件，如 png、jpg、svg、ttf</span></a></li></ol>
 </div>
     
 </div>
@@ -123,7 +123,7 @@
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2018-08-09 14:52:13</span></span>
+        <span class="attr">发布于：<span>2018-08-14 17:03:51</span></span>
         
         <span class="attr">标签：/
         
@@ -138,6 +138,19 @@
     </div>
     <div class="post-content ">
         <p>Webpack 是一个打包模块化的JavaScript的工具，专注于构建模块化的项目。<br>Webpack 通过 loader 转换文件，通过Plugin 注入钩子，最后输出由多个模块组合成的文件。</p>
+<h2 id="Webpack-的工作"><a href="#Webpack-的工作" class="headerlink" title="Webpack 的工作"></a>Webpack 的工作</h2><p><img src="/imgs/webpack-do.svg" alt="Webpack work"></p>
+<h2 id="JS-的转换处理"><a href="#JS-的转换处理" class="headerlink" title="JS 的转换处理"></a>JS 的转换处理</h2><ol>
+<li>转换成可执行的JS，如 vue-loader、ts-loader</li>
+<li>支持新特性，babel-loader</li>
+</ol>
+<h2 id="CSS-的转换处理"><a href="#CSS-的转换处理" class="headerlink" title="CSS 的转换处理"></a>CSS 的转换处理</h2><ol>
+<li>CSS 预处理，如 postcss-loader</li>
+<li>CSS &amp; 基础，css-loader、style-loader</li>
+</ol>
+<h2 id="其它文件，如-png、jpg、svg、ttf"><a href="#其它文件，如-png、jpg、svg、ttf" class="headerlink" title="其它文件，如 png、jpg、svg、ttf"></a>其它文件，如 png、jpg、svg、ttf</h2><ol>
+<li>file-loader</li>
+<li>url-loader</li>
+</ol>
 
         
         <div id="comment-container">
