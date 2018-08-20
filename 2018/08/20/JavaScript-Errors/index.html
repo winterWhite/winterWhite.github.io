@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="墨笛的博客">
+    <meta name="keyword"  content="前端">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        JavaScript Errors - MoDi的博客 | MoDi&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Some technology fragments gathering </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/imgs/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>MoDi Z</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Top-10-JavaScript-Errors"><span class="toc-text">Top 10 JavaScript Errors</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Uncaught-TypeError-Cannot-read-property"><span class="toc-text">Uncaught TypeError: Cannot read property</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeError-‘undefined’-is-not-an-object"><span class="toc-text">TypeError: ‘undefined’ is not an object</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeError-null-is-not-an-object"><span class="toc-text">TypeError: null is not an object</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unknown-Script-error"><span class="toc-text">(Unknown): Script error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeError-Object-doesn’t-support-property"><span class="toc-text">TypeError: Object doesn’t support property</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeError-‘undefined’-is-not-a-function"><span class="toc-text">TypeError: ‘undefined’ is not a function</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Uncaught-RangeError-Maximum-call-stack"><span class="toc-text">Uncaught RangeError: Maximum call stack</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TypeError-Cannot-read-property-‘length’"><span class="toc-text">TypeError: Cannot read property ‘length’</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Uncaught-TypeError-Cannot-set-property"><span class="toc-text">Uncaught TypeError: Cannot set property</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ReferenceError-event-is-not-defined"><span class="toc-text">ReferenceError: event is not defined</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary"><span class="toc-text">Summary</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Some technology fragments gathering </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        JavaScript Errors
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-08-20 10:46:50</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#JavaScript" title="JavaScript">JavaScript</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="Top-10-JavaScript-Errors"><a href="#Top-10-JavaScript-Errors" class="headerlink" title="Top 10 JavaScript Errors"></a>Top 10 JavaScript Errors</h1><h2 id="Uncaught-TypeError-Cannot-read-property"><a href="#Uncaught-TypeError-Cannot-read-property" class="headerlink" title="Uncaught TypeError: Cannot read property"></a>Uncaught TypeError: Cannot read property</h2><p>Error In Chrome</p>
+<p><strong>Mostly Cause By</strong> Improper (不合时宜的) initialization of state while rendering the UI components;<br><strong>Deal With</strong> Initialize state with reasonable default values in the constructor.</p>
+<h2 id="TypeError-‘undefined’-is-not-an-object"><a href="#TypeError-‘undefined’-is-not-an-object" class="headerlink" title="TypeError: ‘undefined’ is not an object"></a>TypeError: ‘undefined’ is not an object</h2><p>Same as First one，Error In Safari</p>
+<h2 id="TypeError-null-is-not-an-object"><a href="#TypeError-null-is-not-an-object" class="headerlink" title="TypeError: null is not an object"></a>TypeError: null is not an object</h2><p>Error In Safari</p>
+<p>This is not same as last two errors，see：</p>
+<ol>
+<li>Undefined is usually a variable that has not been assigned</li>
+<li>Null means the value is blank</li>
+</ol>
+<p><strong>May Cause By</strong> Try using a DOM element in JavaScript before the element is loaded;<br><strong>Deal With</strong> Make sure executes and deals with DOM elements after the DOM elements have been created.</p>
+<h2 id="Unknown-Script-error"><a href="#Unknown-Script-error" class="headerlink" title="(Unknown): Script error"></a>(Unknown): Script error</h2><p>Occurs when an uncaught JavaScript error crosses domain boundaries in violation of the cross-origin policy.</p>
+<p>To Get Useful Information: </p>
+<ol>
+<li>Send the Access-Control-Allow-Origin header, Set * or your domain</li>
+<li>Set crossorigin=”anonymous” on the script tag</li>
+</ol>
+<h2 id="TypeError-Object-doesn’t-support-property"><a href="#TypeError-Object-doesn’t-support-property" class="headerlink" title="TypeError: Object doesn’t support property"></a>TypeError: Object doesn’t support property</h2><p>Error In IE</p>
+<p><strong>May Cause By</strong> IE’s inability to bind methods within the current namespace to the this keyword;<br><strong>Deal With</strong> Using JS namespacing is to always prefix with the actual namespace.</p>
+<p>Example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.isAwesone() =&gt; Rollbar.isAwesone()</span><br></pre></td></tr></table></figure></p>
+<h2 id="TypeError-‘undefined’-is-not-a-function"><a href="#TypeError-‘undefined’-is-not-a-function" class="headerlink" title="TypeError: ‘undefined’ is not a function"></a>TypeError: ‘undefined’ is not a function</h2><p>Error In Chrome</p>
+<p><strong>May Cause By</strong> Self-referencing scopes within callbacks and closures confusion;<br><strong>Deal With</strong> </p>
+<ol>
+<li>Save your reference to this in a variable that can then be inherited by the closure</li>
+<li>Use the bind() method to pass the proper reference</li>
+</ol>
+<h2 id="Uncaught-RangeError-Maximum-call-stack"><a href="#Uncaught-RangeError-Maximum-call-stack" class="headerlink" title="Uncaught RangeError: Maximum call stack"></a>Uncaught RangeError: Maximum call stack</h2><p>Error In Chrome</p>
+<p><strong>Cause By</strong></p>
+<ol>
+<li>Call a recursive (递归) function that does not terminate</li>
+<li>Pass a value to a function that is out of range</li>
+</ol>
+<h2 id="TypeError-Cannot-read-property-‘length’"><a href="#TypeError-Cannot-read-property-‘length’" class="headerlink" title="TypeError: Cannot read property ‘length’"></a>TypeError: Cannot read property ‘length’</h2><p>Error In Chrome</p>
+<p><strong>Cause By</strong> Reading length property for an undefined variable:</p>
+<ol>
+<li>Array is not initialized</li>
+<li>Variable name is hidden in another context</li>
+</ol>
+<h2 id="Uncaught-TypeError-Cannot-set-property"><a href="#Uncaught-TypeError-Cannot-set-property" class="headerlink" title="Uncaught TypeError: Cannot set property"></a>Uncaught TypeError: Cannot set property</h2><p>Error In Chrome</p>
+<p><strong>Cause By</strong> Try to access an undefined variable</p>
+<h2 id="ReferenceError-event-is-not-defined"><a href="#ReferenceError-event-is-not-defined" class="headerlink" title="ReferenceError: event is not defined"></a>ReferenceError: event is not defined</h2><p>Error In Chrome</p>
+<p><strong>Cause By</strong> Try to access a variable that is undefined or is outside the current scope.</p>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>Using TypeScript Make You More Safety!</p>
+
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/winterWhite">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>

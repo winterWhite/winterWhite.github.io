@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="墨笛的博客">
+    <meta name="keyword"  content="前端">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        10 Principles for FE Developer - MoDi的博客 | MoDi&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Some technology fragments gathering </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/imgs/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>MoDi Z</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Divide-and-conquer-分而治之"><span class="toc-text">Divide and conquer 分而治之</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Semanticization-语义化命名"><span class="toc-text">Semanticization 语义化命名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Avoid-magic-numbers-or-strings"><span class="toc-text">Avoid magic numbers or strings</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Fight-nesting"><span class="toc-text">Fight nesting</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configure-hard-配置分离管理"><span class="toc-text">Configure hard 配置分离管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Frameworks-are-there-to-help-选择合适的框架"><span class="toc-text">Frameworks are there to help 选择合适的框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unless-it-is-a-prototype-—-write-tests-测试"><span class="toc-text">Unless it is a prototype — write tests 测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Use-version-control-版本控制"><span class="toc-text">Use version control 版本控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Manage-state-responsibly-状态管理"><span class="toc-text">Manage state responsibly 状态管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Question-trends-质疑精神"><span class="toc-text">Question trends 质疑精神</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Some technology fragments gathering </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        10 Principles for FE Developer
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2018-08-20 13:52:27</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#FrontEnd" title="FrontEnd">FrontEnd</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="Divide-and-conquer-分而治之"><a href="#Divide-and-conquer-分而治之" class="headerlink" title="Divide and conquer 分而治之"></a>Divide and conquer 分而治之</h2><h2 id="Semanticization-语义化命名"><a href="#Semanticization-语义化命名" class="headerlink" title="Semanticization 语义化命名"></a>Semanticization 语义化命名</h2><h2 id="Avoid-magic-numbers-or-strings"><a href="#Avoid-magic-numbers-or-strings" class="headerlink" title="Avoid magic numbers or strings"></a>Avoid magic numbers or strings</h2><p>Put it into a variable with a meaningful name and move it to the top of its scope.</p>
+<h2 id="Fight-nesting"><a href="#Fight-nesting" class="headerlink" title="Fight nesting"></a>Fight nesting</h2><p>超过 500 行的代码、嵌套超过 3 层的代码，都需要分割重构！</p>
+<h2 id="Configure-hard-配置分离管理"><a href="#Configure-hard-配置分离管理" class="headerlink" title="Configure hard 配置分离管理"></a>Configure hard 配置分离管理</h2><p>If your application uses global values, API endpoints, feature toggles, or third-party credentials³ — put those in a separate config file.</p>
+<h2 id="Frameworks-are-there-to-help-选择合适的框架"><a href="#Frameworks-are-there-to-help-选择合适的框架" class="headerlink" title="Frameworks are there to help 选择合适的框架"></a>Frameworks are there to help 选择合适的框架</h2><ul>
+<li>React：需要良好的规划，Will Payback A Lot</li>
+<li>Angular / VueJS / Ember：消除架构规划的优缺点、黑盒</li>
+<li>jQuery / lodash / or similar：缩短开发时间，更多作为辅助，Not 基础</li>
+<li>Pure JavaScript ：大量时间，计划</li>
+</ul>
+<h2 id="Unless-it-is-a-prototype-—-write-tests-测试"><a href="#Unless-it-is-a-prototype-—-write-tests-测试" class="headerlink" title="Unless it is a prototype — write tests 测试"></a>Unless it is a prototype — write tests 测试</h2><p>Unit tests. Smoke tests. End-to-end tests</p>
+<h2 id="Use-version-control-版本控制"><a href="#Use-version-control-版本控制" class="headerlink" title="Use version control 版本控制"></a>Use version control 版本控制</h2><h2 id="Manage-state-responsibly-状态管理"><a href="#Manage-state-responsibly-状态管理" class="headerlink" title="Manage state responsibly 状态管理"></a>Manage state responsibly 状态管理</h2><p>React：</p>
+<ul>
+<li>Redux for Flux</li>
+<li>Mobx for Observable</li>
+</ul>
+<p>Angular, Ember, and VueJS：</p>
+<ul>
+<li>Built in based on Observable</li>
+<li>Vuex、ngRx</li>
+</ul>
+<h2 id="Question-trends-质疑精神"><a href="#Question-trends-质疑精神" class="headerlink" title="Question trends 质疑精神"></a>Question trends 质疑精神</h2>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/winterWhite">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+</html>
